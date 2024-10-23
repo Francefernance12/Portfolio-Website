@@ -9,6 +9,11 @@
 </head>
 <body>
     <div class="container mt-5">
+        <!-- Navbar will be placed here -->
+        <div class="navbar-placeholder"></div>
+
+
+
         <!-- Cover -->
         <div class="row featurette align-items-center my-5">
             <div class="col-md-7 d-flex flex-column justify-content-center" style="height: 100%;">
@@ -26,7 +31,7 @@
         <!-- Movie Ranking List -->
         <div class="text-center" id="div-space">
             <h3>
-                <a class="btn btn-primary" href="./public/movie-ranking.html">Movie Ranking List</a>
+                <a class="btn btn-primary" href="./pages/movie-ranking.html">Movie Ranking List</a>
             </h3>
             <img src="./assets/images/movielist/movielist.png" class="img-fluid" alt="Movie Ranking List" />
         </div>
@@ -35,30 +40,18 @@
         <!-- Graduation Invite -->
         <div class="text-center" id="div-space">
             <h3>
-                <a class="btn btn-success" href="./public/graduation-invite.html">Graduation Invite</a>
+                <a class="btn btn-success" href="./pages/graduation-invite.html">Graduation Invite</a>
             </h3>
             <img src="./assets/images/Graduate/graduate.png" class="img-fluid" alt="Graduation Invite" />
         </div>
 
-
         <!-- Footer will be loaded here -->
         <div id="footer-placeholder"></div>
     </div>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        // Load footer from footer.html
-        fetch('./components/footer.html').then(response => {
-        if (!response.ok) {
-            throw new Error('Failed to load footer');
-        }
-        return response.text();
-        }).then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        }).catch(error => {
-            console.error('Error:', error);
-        });
 
-    </script>
+    <!-- Scripts -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/scripts.js"></Script>
 </body>
 </html>
