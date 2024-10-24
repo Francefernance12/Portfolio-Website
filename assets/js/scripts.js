@@ -1,5 +1,5 @@
 // Load footer from footer.html
-fetch('../../components/footer.html')
+fetch('./components/footer.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to load footer');
@@ -14,7 +14,7 @@ fetch('../../components/footer.html')
     });
 
 // Load navbar from navbar.html
-fetch('../../components/navbar.html')
+fetch('./components/navbar.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to load navbar');
